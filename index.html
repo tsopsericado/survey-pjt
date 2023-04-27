@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="heading">
+        <h1 id="head">freeCodeCamp Survey Form</h1>
+        <h2 id="subheader">Thanks you for taking the time to help us improve the platform</h2>
+    </div>
+    <form>
+        <div id="content1">
+            <label>name</label> <br><br>
+            <input type="name" name="name" placeholder="enter your name" class="box"> <br><br>
+            <label>gender</label> <br><br>
+            <input type="gender" name="gender" placeholder="enter your gender" class="box"> <br><br>
+            <label>age</label> <br><br>
+            <input type="age" name="age" placeholder="enter your age" class="box"> <br><br>
+            <label>phone</label> <br><br>
+            <input type="phone" name="phone" placeholder="enter your phone" class="box"> <br><br>
+            <label>which option best describe your current role?</label> <br><br>
+
+            <div id="option1">
+                <select>
+                    <option name="select your Role">Select your role</option>
+                    <option value="patient">Challenges</option>
+                    <option value="medical personal">community</option>
+                    <option value="non patient">Projects</option>
+                    <option value="others">open source</option>
+                </select>
+            </div>
+            <br>
+            <label id="head1">would you recommend freecodecamp to a friend?</label> <br> <br>
+            <input type="radio" name="radio" class="larg1">Definitely<br> <br>
+            <input type="radio" name="radio" class="larg1">May be<br> <br>
+            <input type="radio" name="radio" class="larg1">Not sure<br> <br>
+            <label>What is your favorite feature of freecodecamp</label> <br>
+            <div id="option2">
+                    <select>
+                    <option name="select your Role">select your role</option>
+                    <option value="patient">Challenges</option>
+                    <option value="medical personal">community</option>
+                    <option value="non patient">Projects</option>
+                    <option value="others">open source</option>
+                </select>
+            </div>
+            <br><br>
+            <label id="head2">what will you like to see improved? (check all that apply)</label>
+            <div id="content2">
+                <label>
+                    <input type="checkbox" name="checkbox" class="larger">Front-end projects</label> <br>
+                <label>
+                    <input type="checkbox" name="checkbox" class="larger">Back-end projects</label> <br>
+                <label>
+                    <input type="checkbox" name="checkbox" class="larger">Data visualisation</label> <br>
+                <lable>
+                    <input type="checkbox" name="checkbox" class="larger">Challenges
+                </lable> <br>
+                <label>
+                    <input type="checkbox" name="checkbox" class="larger">Open source community</label><br>
+                     <label>
+                    <input type="checkbox" name="checkbox" class="larger">Gitter helps rooms</label><br>
+                     <label>
+                    <input type="checkbox" name="checkbox" class="larger">videos</label><br>
+                     <label>
+                    <input type="checkbox" name="checkbox" class="larger">City Meetups</label><br>
+                     <label>
+                    <input type="checkbox" name="checkbox" class="larger">Wiki</label><br>
+                     <label>
+                    <input type="checkbox" name="checkbox" class="larger">Forum</label><br>
+                     <label>
+                    <input type="checkbox" name="checkbox" class="larger">additional courses</label><br>
+
+            </div>
+            <label id="head3">Any comment or suggestion?<br> <br>
+                <textarea class="head3" placeholder="Enter your comments here...."></textarea>
+            </label>
+            <br>
+            <div class="submit">
+                <button class="btn">submit</button>
+            </div>
+        </div>
+    </form>
 </body>
+
 </html>
